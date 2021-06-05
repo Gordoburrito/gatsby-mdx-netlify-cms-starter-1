@@ -8,4 +8,7 @@ This page was created through the CMS.
 
 [Back Home](/)
 
+<Testimonial image="" attribution="e">
+  f</Testimonial>
+
 <CallToAction url="" align="center" bgColor="rebeccapurple"></CallToAction>

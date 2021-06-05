@@ -63,4 +63,6 @@ sections:
 
       is this working anybetter now?
     title: Hello
+  - body: <Column columnWidth=2>Hello</Column>
+    title: New title
 ---

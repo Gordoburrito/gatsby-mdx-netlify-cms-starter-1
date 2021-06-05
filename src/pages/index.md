@@ -22,10 +22,6 @@ sections:
 
       * All the usual Gatsby + MDX stuff
         <CallToAction url="https://github.com/renvrant/gatsby-mdx-netlify-cms-starter" align="center" bgColor="crimson">Check out the Repo</CallToAction>
-
-        <CallToAction url="https://github.com/renvrant/gatsby-mdx-netlify-cms-starter" align="center" bgColor="rebeccapurple"></CallToAction>
-
-        <CallToAction url="https://github.com/renvrant/gatsby-mdx-netlify-cms-starter" align="center" bgColor="crimson">Check out the Repo</CallToAction>
     title: About This Starter
   - body: >-
       Go through each of these directories to understand the project and extend

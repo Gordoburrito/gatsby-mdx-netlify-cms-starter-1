@@ -7,3 +7,5 @@ description: CMS Made
 This page was created through the CMS.
 
 [Back Home](/)
+
+<CallToAction url="" align="center" bgColor="rebeccapurple"></CallToAction>

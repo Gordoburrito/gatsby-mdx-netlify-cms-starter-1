@@ -6,6 +6,7 @@ import {
   safelyGetFrontMatter,
   withFallback,
 } from "../cms"
+import { Hero } from "../components/hero.component"
 
 export const HomePageTemplate = ({ title, sections }) => (
   <article>

@@ -6,10 +6,12 @@ sections:
       Extended from the Gatsby starter, this starter aims to provide an example
       for using Gatsby-MDX with Netlify.
 
-      <Hero heading="hello" subheading="hey"/>
-      
+
       ## Features Hello
-      
+
+
+      <Hero image="" heading="heading" subheading="we didit" buttonText="button"/>
+
 
       * Swap page template based on CMS key, allowing editors to choose different page templates
 

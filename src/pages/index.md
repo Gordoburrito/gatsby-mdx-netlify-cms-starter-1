@@ -53,17 +53,12 @@ sections:
       uses [@mdx/runtime](https://mdxjs.com/advanced/runtime) so please look
       there fore configuration details.
     title: Frontmatter & Markdown
-  - title: A new section
-    body: >-
-      Fuck this is good stuff
+  - body: |-
+      wsfw
 
+      <Testimonial image="" attribution="– I can see it in your eyes">
+        Hello Is it me you're looking for</Testimonial>
 
-      <CallToAction url="" align="center" bgColor="rebeccapurple">Does this work?</CallToAction>
-  - body: >-
-      Here is some content
-
-
-      <Testimonial image="" attribution="I want to attribute this quote somewhere too">
-        Here is a quote with some content</Testimonial>
-    title: Famous Titties
+      is this working anybetter now?
+    title: Hello
 ---

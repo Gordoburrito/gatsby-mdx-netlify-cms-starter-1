@@ -58,4 +58,11 @@ sections:
 
 
       <CallToAction url="" align="center" bgColor="rebeccapurple">Does this work?</CallToAction>
+  - body: >-
+      Here is some content
+
+
+      <Testimonial image="" attribution="I want to attribute this quote somewhere too">
+        Here is a quote with some content</Testimonial>
+    title: Famous Titties
 ---

@@ -16,7 +16,45 @@ export const HomePageTemplate = ({ title, sections }) => (
     <SEO title={title} />
     {/* <Heading tag={1}>{title}</Heading> */}
     <h1>Start Here</h1>
-    
+    {/* <Hero 
+      image="" 
+      heading="Welcome to" 
+      subheading="Rooster Grin" 
+      buttonText="BUTTON BUTTON" 
+      buttonLink="#"
+    />
+    <TitleHTMLBodyButton
+      title=""
+      body=""
+      buttonText="BUTTON BUTTON"
+      buttonLink="#"
+      buttonStyle=""
+    />
+    <IconList
+      icons={[
+          {name: "pad",
+          icon: "img"},
+          {name: "pad",
+          icon: "img"},
+          {name: "pad",
+          icon: "img"},
+          {name: "pad",
+          icon: "img"},
+      ]}
+    />
+    {/* <Carousel blurbs={[
+      {name: "John Doe", date: "date", quote: "This is the best website"},
+      {name: "John Doe", date: "date", quote: "This is the best website"},
+    ]}/>
+    <Section layout="split or full background"/>
+    <Section>
+      <TitleHTMLBodyButton/>
+      <Image/>
+    </Section>
+    <Section>
+      <TitleHTMLBodyButton/>
+      <Fullbackground/>
+    </Section> */} 
     {withFallback(sections, []).map((section, i) => {
       return (
         <section key={i}>

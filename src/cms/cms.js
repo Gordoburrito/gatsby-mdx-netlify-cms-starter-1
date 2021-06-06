@@ -2,7 +2,7 @@ import CMS from "netlify-cms-app"
 
 import { HomePagePreview, DefaultPagePreview } from "./preview-templates"
 import { ctaEditorConfig, testimonialEditorConfig } from "./editor-components"
-import {heroEditorConfig} from "./editor-components/hero.editor"
+import { heroEditorConfig } from "./editor-components/hero.editor"
 import { columnEditorConfig } from "./editor-components/columns.editor"
 
 // Not reliably loaded by registerPreviewStyle, so import directly

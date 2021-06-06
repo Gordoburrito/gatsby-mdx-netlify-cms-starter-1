@@ -639,14 +639,14 @@ pre tt:after {
   color: white;
   background-color: purple;
 }
-.btn--purple{
+.btn--primary{
   background-color: purple
 }
 
-.btn--orange{
+.btn--secondary{
   background-color: orange;
 }
 
-.btn--plain{
+.btn--tertiary{
   background-color: red;
 }

@@ -11,7 +11,7 @@ export const Hero = ({ image, heading, subheading, buttonText, ...other }) => {
 
       <h1 className="hero__heading">{heading}</h1>
       <h1 className="hero__subheading">{subheading}</h1>
-      <CallToAction className="btn btn--purple">
+      <CallToAction bgColor="primary">
         {buttonText}
       </CallToAction>
     </div>

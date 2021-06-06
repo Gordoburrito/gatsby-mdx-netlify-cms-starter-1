@@ -620,3 +620,33 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.column-container {
+  grid-template-columns: repeat(var(--columns), 1fr);
+}
+.col {
+  grid-column: span var(--width);
+}
+
+.hero__heading {
+  font-size: 200px;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.5em 2.5em;
+  color: white;
+  background-color: purple;
+}
+.btn--purple{
+  background-color: purple
+}
+
+.btn--orange{
+  background-color: orange;
+}
+
+.btn--plain{
+  background-color: red;
+}

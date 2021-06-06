@@ -3,6 +3,7 @@ import React from "react"
 import { Heading, CallToAction, SmartLink } from "../components"
 import { Testimonial } from "../components/testimonial.component"
 import { Hero } from "../components/hero.component"
+import { Column } from "../components/column.component"
 
 // Include all components that will be parsed by MDX as React components here.
 // Any React component you'd like to allow your editors to use should be placed here.
@@ -10,6 +11,7 @@ export const CMS_SHORTCODES = {
   CallToAction: props => <CallToAction {...props} />,
   Testimonial: props => <Testimonial {...props} />,
   Hero: props => <Hero {...props} />,
+  Column: props => <Column {...props} />,
 }
 
 // Include any tags you'd like to replace with React components

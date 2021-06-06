@@ -6,18 +6,23 @@ import {
   safelyGetFrontMatter,
   withFallback,
 } from "../cms"
+import { ColumnContainer } from "../components/column-container.component"
+
+
+
 
 export const HomePageTemplate = ({ title, sections }) => (
   <article>
     <SEO title={title} />
-    <Heading tag={1}>{title}</Heading>
+    {/* <Heading tag={1}>{title}</Heading> */}
+    <h1>Start Here</h1>
+    
     {withFallback(sections, []).map((section, i) => {
       return (
         <section key={i}>
-          <h2>{section.title}</h2>
           <RenderMarkdown
             md={section.body}
-          />
+            />
           <hr />
         </section>
       )

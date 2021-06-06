@@ -1,16 +1,17 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { CallToAction } from "./call-to-action.component"
-import Image from "./image";
+import '../styles/hero.css'
 
 export const Hero = ({ image, heading, subheading, buttonText, ...other }) => {
   
   return (
     <div class="hero">
       {/* <Image image={image}></Image> */}
-      <h1 class="hero__heading">{heading}</h1>
-      <h1 class="hero__subheading">{subheading}</h1>
-      <CallToAction class="hero__button">
+
+      <h1 className="hero__heading">{heading}</h1>
+      <h1 className="hero__subheading">{subheading}</h1>
+      <CallToAction className="btn btn--purple">
         {buttonText}
       </CallToAction>
     </div>

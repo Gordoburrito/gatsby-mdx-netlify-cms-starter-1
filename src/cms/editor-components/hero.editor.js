@@ -1,5 +1,5 @@
 const heroEditor = props =>
-  `<Hero image="${props.image || ""}" heading="${props.heading || ""}" subheading="${props.subheading || ""}" buttonText="${props.buttonText || ""}"/>`
+  `<Hero image="${props.image || ""}" heading="${props.heading || ""}" subheading="${props.subheading || ""}" buttonText="${props.buttonText || ""}" buttonLink="${props.buttonLink || ""}"/>`
 
 export const heroEditorConfig = {
   // Internal id of the component
@@ -12,9 +12,10 @@ export const heroEditorConfig = {
     { label: "Heading", name: "heading", widget: "string" },
     { label: "Subheading", name: "subheading", widget: "string" },
     { label: "Button Text", name: "buttonText", widget: "string" },
+    { label: "Button Link", name: "buttonLink", widget: "string" },
   ],
   // Pattern to identify a block as being an instance of this component
-  pattern: /<Hero image="(\S+)" heading="(\S+)" subheading=(\S+) buttonText=(\S+)\/>/g,
+  pattern: /<Hero image="(\S+)" heading="(\S+)" subheading=(\S+) buttonText=(\S+) buttonLink=(\S+)\/>/g,
   // Function to extract data elements from the regexp match
   fromBlock: function(match) {
     return {
@@ -22,6 +23,7 @@ export const heroEditorConfig = {
       heading: match[2],
       subheading: match[3],
       buttonText: match[4],
+      buttonLink: match[5],
     }
   },
   // Function to create a text block from an instance of this component

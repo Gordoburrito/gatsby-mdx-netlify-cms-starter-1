@@ -1,31 +1,23 @@
 const ctaEditor = props =>
-  `<CallToAction url="${props.url || ""}" align="center" bgColor="${props.bgColor}">${props.text || ""}</CallToAction>`
+  `<Column columnWidth="${props.width || ""}" >${props.content || ""} </Column>`
 
-export const ctaEditorConfig = {
+export const columnEditorConfig = {
   // Internal id of the component
-  id: "cta",
+  id: "column",
   // Visible label
-  label: "Call to Action",
+  label: "Column",
   // Fields the user need to fill out when adding an instance of the component
   fields: [
-    { label: "Text", name: "text", widget: "string" },
-    { label: "Link", name: "url", widget: "string" },
-    {
-      label: "Background Colour",
-      name: "bgColor",
-      widget: "select",
-      options: ["orange", "purple", "plain"],
-      default: "rebeccapurple"
-    },
+    { label: "Column Width", name: "width", widget: "number" },
+    { label: "Content", name: "content", widget: "markdown" },
   ],
   // Pattern to identify a block as being an instance of this component
-  pattern: /<CallToAction url="(\S+)" align="center" bgColor="(\S+)">(\S+)<\/CallToAction>/g,
+  pattern: /<Column columnWidth=(\S+)>(\S+)<\/Column>/g,
   // Function to extract data elements from the regexp match
   fromBlock: function(match) {
     return {
-      url: match[1],
-      bgColor: match[2],
-      text: match[3],
+      width: match[1],
+      content: match[2]
     }
   },
   // Function to create a text block from an instance of this component

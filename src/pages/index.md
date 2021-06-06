@@ -2,29 +2,8 @@
 templateKey: home-page
 title: Home Page
 sections:
-  - body: >-
-      Extended from the Gatsby starter, this starter aims to provide an example
-      for using Gatsby-MDX with Netlify.
-
-
-      ## Features Hello
-
-
-      <Hero image="" heading="heading" subheading="we didit" buttonText="button"/>
-
-
-      * Swap page template based on CMS key, allowing editors to choose different page templates
-
-      * Support CMS configurations that save markdown in frontmatter fields with an mdx-enabled markdown renderer component (with example)
-
-      * [Hide pages from being editable by the CMS](/cms-unreachable)
-
-      * Extend Netlify CMS editor to support the insertion of a React component, allowing your editors to include things like buttons or testimonials
-
-      * Swap default HTML elements in posts for React components, allowing for greater control
-
-      * All the usual Gatsby + MDX stuff
-        <CallToAction url="https://github.com/renvrant/gatsby-mdx-netlify-cms-starter" align="center" bgColor="crimson">Check out the Repo</CallToAction>
+  - body: <Hero image="" heading="Welcome to " subheading="Rooster Grin"
+      buttonText="BUTTON BUTTON"/>
     title: About This Starter
   - body: >-
       Go through each of these directories to understand the project and extend
